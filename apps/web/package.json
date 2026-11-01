@@ -1,0 +1,52 @@
+{
+  "name": "@contribpilot/web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "warmup": "node scripts/warmup.mjs"
+  },
+  "dependencies": {
+    "@contribpilot/ai": "workspace:*",
+    "@contribpilot/config": "workspace:*",
+    "@contribpilot/db": "workspace:*",
+    "@contribpilot/github": "workspace:*",
+    "@contribpilot/guardrails": "workspace:*",
+    "@contribpilot/guide": "workspace:*",
+    "@contribpilot/patch": "workspace:*",
+    "@contribpilot/shared": "workspace:*",
+    "@radix-ui/react-icons": "latest",
+    "@tanstack/react-query": "^5.62.0",
+    "pg": "latest",
+    "@trpc/client": "11.19.0",
+    "@trpc/server": "11.19.0",
+    "@trpc/tanstack-react-query": "11.19.0",
+    "bullmq": "latest",
+    "clsx": "latest",
+    "dotenv": "latest",
+    "drizzle-orm": "latest",
+    "ioredis": "^5.4.1",
+    "next": "^15.1.0",
+    "next-auth": "^5.0.0-beta.25",
+    "next-themes": "^0.4.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "superjson": "^2.2.1",
+    "tailwind-merge": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "tailwindcss": "latest",
+    "typescript": "^5.6.0",
+    "vitest": "^3.0.0"
+  }
+}
