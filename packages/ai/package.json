@@ -1,0 +1,27 @@
+{
+  "name": "@contribpilot/ai",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./prompts": "./src/prompts/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@contribpilot/config": "workspace:*",
+    "@contribpilot/shared": "workspace:*",
+    "groq-sdk": "latest",
+    "ioredis": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "dotenv": "latest",
+    "typescript": "^5.6.0",
+    "vitest": "^3.0.0"
+  }
+}
