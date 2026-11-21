@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX "github_installations_installation_id_unique" ON "github_installations" USING btree ("installation_id");
