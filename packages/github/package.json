@@ -1,0 +1,28 @@
+{
+  "name": "@contribpilot/github",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./parseRepoUrl": "./src/parseRepoUrl.ts",
+    "./client": "./src/client.ts",
+    "./provider": "./src/provider.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@contribpilot/config": "workspace:*",
+    "@contribpilot/shared": "workspace:*",
+    "@octokit/auth-app": "latest",
+    "octokit": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "typescript": "^5.6.0",
+    "vitest": "^3.0.0"
+  }
+}
